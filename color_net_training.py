@@ -145,7 +145,7 @@ model.fit_generator(
         steps_per_epoch=100000,
         epochs=nb_epoch,
         validation_data=test_set,
-        validation_steps=30000,
-        callbacks=callbacks_list)
+        # validation_steps=30000,
+        # callbacks=callbacks_list)
 
 model.save('color_model.h5')
